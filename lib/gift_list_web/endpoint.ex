@@ -7,8 +7,10 @@ defmodule GiftListWeb.Endpoint do
        signing_salt: "D7+dW4xS"
   ]
 
+  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
+
   socket "/socket", GiftListWeb.UserSocket,
-    websocket: [connect_info: [session: @session_options]],
+    websocket: true,
     longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.

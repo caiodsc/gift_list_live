@@ -1,5 +1,6 @@
 defmodule GiftListWeb.Router do
   use GiftListWeb, :router
+  import Phoenix.LiveView.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -7,6 +8,7 @@ defmodule GiftListWeb.Router do
     plug :fetch_live_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug :put_live_layout, {GiftListWeb.LayoutView, :app}
   end
 
   pipeline :api do
@@ -17,6 +19,10 @@ defmodule GiftListWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    resources "/products", ProductController
+
+    live "/gift_list", GiftListLive
   end
 
   # Other scopes may use custom stacks.

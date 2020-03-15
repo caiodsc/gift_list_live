@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e99b58-3ebe-4a67-b8d4-2e4e6b38ecab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/floki.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/html_entities.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/phoenix_live_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/gift_list_web/live/gitf_list_live.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gift_list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gift_list.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_live_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/phoenix_live_view.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gift_list_web.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/gift_list_web/endpoint.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/endpoint.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/gift_list_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phoenix_live_view_example" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -44,6 +39,7 @@
       </list>
     </option>
   </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584282522146</updated>
-      <workItem from="1584282526750" duration="1420000" />
+      <workItem from="1584282526750" duration="12579000" />
     </task>
     <servers />
   </component>
