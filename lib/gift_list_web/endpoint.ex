@@ -1,8 +1,14 @@
 defmodule GiftListWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :gift_list
 
+  @session_options [
+       store: :cookie,
+       key: "_gift_list_key",
+       signing_salt: "D7+dW4xS"
+  ]
+
   socket "/socket", GiftListWeb.UserSocket,
-    websocket: true,
+    websocket: [connect_info: [session: @session_options]],
     longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
@@ -37,10 +43,7 @@ defmodule GiftListWeb.Endpoint do
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
-  plug Plug.Session,
-    store: :cookie,
-    key: "_gift_list_key",
-    signing_salt: "D7+dW4xS"
+  plug Plug.Session, @session_options
 
   plug GiftListWeb.Router
 end

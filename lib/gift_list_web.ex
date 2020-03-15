@@ -23,7 +23,11 @@ defmodule GiftListWeb do
 
       import Plug.Conn
       import GiftListWeb.Gettext
+
+      import Phoenix.LiveView.Controller
+
       alias GiftListWeb.Router.Helpers, as: Routes
+
     end
   end
 
@@ -41,6 +45,9 @@ defmodule GiftListWeb do
 
       import GiftListWeb.ErrorHelpers
       import GiftListWeb.Gettext
+
+      import Phoenix.LiveView.Helpers
+
       alias GiftListWeb.Router.Helpers, as: Routes
     end
   end
@@ -50,6 +57,8 @@ defmodule GiftListWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+
+      import Phoenix.LiveView.Router
     end
   end
 

@@ -17,6 +17,12 @@ config :gift_list, GiftListWeb.Endpoint,
   render_errors: [view: GiftListWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: GiftList.PubSub, adapter: Phoenix.PubSub.PG2]
 
+# Configures the live view
+config :gift_list, GiftListWeb.Endpoint,
+       live_view: [
+         signing_salt: "Y0Hn9Zn3GrNm1Vk/KTrlNOIHAStdJhFP"
+       ]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
