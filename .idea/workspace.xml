@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e99b58-3ebe-4a67-b8d4-2e4e6b38ecab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/gift_list_web/plugs/set_csrf_token.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gift_list_web/live/gitf_list_live.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/live/gitf_list_live.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gift_list_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/router.ex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584360754561</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Plug to handle nil csrf token">
+      <created>1584384335670</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584384335670</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +156,7 @@
     <MESSAGE value="Buildpack" />
     <MESSAGE value="Procfile" />
     <MESSAGE value="Finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
+    <MESSAGE value="Plug to handle nil csrf token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plug to handle nil csrf token" />
   </component>
 </project>
