@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e99b58-3ebe-4a67-b8d4-2e4e6b38ecab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/elixir_buildpack.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.secret.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.secret.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gift_list_web/endpoint.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/endpoint.ex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584282522146</updated>
-      <workItem from="1584282526750" duration="41568000" />
+      <workItem from="1584282526750" duration="41833000" />
     </task>
     <task id="LOCAL-00001" summary="Created the &quot;handle events&quot; environment">
       <created>1584299483816</created>
@@ -60,7 +62,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584337090563</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Buildpack">
+      <created>1584337493058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584337493058</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Procfile">
+      <created>1584337575953</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584337575953</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +96,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the &quot;handle events&quot; environment" />
     <MESSAGE value="Finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
+    <MESSAGE value="Buildpack" />
+    <MESSAGE value="Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Procfile" />
   </component>
 </project>
