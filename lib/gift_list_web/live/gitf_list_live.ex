@@ -10,7 +10,7 @@ defmodule GiftListWeb.GiftListLive do
   alias GiftListWeb.GiftListLiveView
 
   def mount(params, session, socket) do
-    session_token = Phoenix.Controller.get_csrf_token() #session["_csrf_token"]
+    session_token = session["_csrf_token"]
 
     {:ok, list} = GiftLists.get_list_or_create_by_session!(session_token)
 

@@ -2,9 +2,13 @@ defmodule GiftListWeb.Router do
   use GiftListWeb, :router
   import Phoenix.LiveView.Router
 
+  alias GiftListWeb.Plugs.SetCsrfToken
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
+    plug Plug.CSRFProtection
+    plug SetCsrfToken
     plug :fetch_live_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
