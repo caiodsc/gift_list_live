@@ -10,7 +10,7 @@ defmodule GiftListWeb.GiftListLive do
   alias GiftListWeb.GiftListLiveView
 
   def mount(params, session, socket) do
-    session_token = "TOKEN" #session["_csrf_token"]
+    session_token = Phoenix.Controller.get_csrf_token() #session["_csrf_token"]
 
     {:ok, list} = GiftLists.get_list_or_create_by_session!(session_token)
 
@@ -33,7 +33,6 @@ defmodule GiftListWeb.GiftListLive do
   end
 
   def handle_event("increment", params, socket) do
-    IO.inspect(params)
     count = socket.assigns.count + 1
     socket = assign(socket, :count, count)
     {:noreply, socket}
