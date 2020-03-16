@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e99b58-3ebe-4a67-b8d4-2e4e6b38ecab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/prod.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/prod.secret.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.secret.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gift_list_web/endpoint.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/endpoint.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elixir_buildpack.config" beforeDir="false" afterPath="$PROJECT_DIR$/elixir_buildpack.config" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584282522146</updated>
-      <workItem from="1584282526750" duration="41833000" />
+      <workItem from="1584282526750" duration="42566000" />
     </task>
     <task id="LOCAL-00001" summary="Created the &quot;handle events&quot; environment">
       <created>1584299483816</created>
@@ -76,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584337575953</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finish">
+      <created>1584337775328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584337775328</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,9 +101,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the &quot;handle events&quot; environment" />
-    <MESSAGE value="Finish" />
     <MESSAGE value="Buildpack" />
     <MESSAGE value="Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Procfile" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
 </project>
