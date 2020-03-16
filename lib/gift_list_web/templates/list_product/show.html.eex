@@ -1,0 +1,13 @@
+<h1>Show List product</h1>
+
+<ul>
+
+  <li>
+    <strong>Quantity:</strong>
+    <%= @list_product.quantity %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.list_product_path(@conn, :edit, @list_product) %></span>
+<span><%= link "Back", to: Routes.list_product_path(@conn, :index) %></span>

@@ -24,6 +24,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/gettext" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/jason" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/number" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/phoenix" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/phoenix_ecto" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/phoenix_html" />
@@ -77,5 +78,7 @@
     <orderEntry type="library" name="plug_crypto" level="project" />
     <orderEntry type="library" name="phoenix_live_view" level="project" />
     <orderEntry type="library" name="floki" level="project" />
+    <orderEntry type="library" name="number" level="project" />
+    <orderEntry type="library" name="excoveralls" level="project" />
   </component>
 </module>

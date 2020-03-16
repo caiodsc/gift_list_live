@@ -1,0 +1,23 @@
+<h1>Show List</h1>
+
+<ul>
+
+  <li>
+    <strong>Session:</strong>
+    <%= @list.session %>
+  </li>
+
+  <li>
+    <strong>Products count:</strong>
+    <%= @list.products_count %>
+  </li>
+
+  <li>
+    <strong>Total:</strong>
+    <%= @list.total %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.list_path(@conn, :edit, @list) %></span>
+<span><%= link "Back", to: Routes.list_path(@conn, :index) %></span>

@@ -18,11 +18,12 @@ defmodule GiftListWeb.Router do
   scope "/", GiftListWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    #get "/", PageController, :index
 
+    resources "/lists", ListController
     resources "/products", ProductController
 
-    live "/gift_list", GiftListLive
+    live "/", GiftListLive
   end
 
   # Other scopes may use custom stacks.

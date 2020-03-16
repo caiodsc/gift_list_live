@@ -1,0 +1,36 @@
+<h1>Total: <%= number_to_currency(@list.total) %></h1>
+
+<%= if Enum.count(@list.list_products) > 0 do %>
+    <h3>Você tem <%= Enum.count(@list.list_products) %> produtos adicionados na sua lista!</h3>
+<% else %>
+    <h3>Você ainda não possui produtos na sua lista!</h3>
+<% end %>
+
+<div class="row">
+    <%= for product <- @products do %>
+        <div class="card column product-column">
+            <img src="<%= product.image_url %>" style="width:100%">
+            <div class="card_container">
+                <h4><b><%= product.name %></b></h4>
+                <p><%= number_to_currency(product.price) %></p>
+                <%= if not Enum.member?(@list.products, product) do %>
+                    <div class="row">
+                        <button style="width: 100%" class="column" phx-click="add" phx-value-product-id="<%= product.id %>">
+                            Adicionar
+                        </button>
+                    </div>
+                <% else %>
+                <% list_product = @list.list_products |> Enum.find(fn x -> x.product_id == product.id end) %>
+                    <div class="row">
+                        <button class="column column-20 button-clear" phx-click="remove" phx-value-product-id="<%= product.id %>">-</button>
+                        <button class="column column-40 button-clear" style="text-align: center"><%= list_product.quantity %></button>
+                        <button class="column column-20 button-clear" phx-click="add" phx-value-product-id="<%= product.id %>">+</button>
+                        <button class="column column-20 button-clear" style="text-align: center" phx-click="remove-all" phx-value-product-id="<%= product.id %>">Lixo</button>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+</br></br></br>
