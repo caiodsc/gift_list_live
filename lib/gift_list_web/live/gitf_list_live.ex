@@ -1,5 +1,6 @@
 defmodule GiftListWeb.GiftListLive do
   use Phoenix.LiveView
+
   import Ecto.Query, warn: false
 
   alias GiftList.Repo
@@ -30,18 +31,6 @@ defmodule GiftListWeb.GiftListLive do
 
   def render(assigns) do
     Phoenix.View.render(GiftListLiveView, "page.html", assigns)
-  end
-
-  def handle_event("increment", params, socket) do
-    count = socket.assigns.count + 1
-    socket = assign(socket, :count, count)
-    {:noreply, socket}
-  end
-
-  def handle_event("decrement", %{teste: t}, socket) do
-    count = socket.assigns.count - 1
-    socket = assign(socket, :count, count)
-    {:noreply, socket}
   end
 
   def handle_event("add", %{"product-id" => product_id}, socket) do
