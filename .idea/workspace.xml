@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e99b58-3ebe-4a67-b8d4-2e4e6b38ecab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/gift_list_web/live/gitf_list_live.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/live/gitf_list_live.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gift_list_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gift_list_web/templates/gift_list_live/page.html.leex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gift_list_web/templates/gift_list_live/page.html.leex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584384914390</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Clean code">
+      <created>1584385293543</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1584385293543</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +173,7 @@
     <MESSAGE value="Finish" />
     <MESSAGE value="Plug to handle nil csrf token" />
     <MESSAGE value="Plug Module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plug Module" />
+    <MESSAGE value="Clean code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean code" />
   </component>
 </project>

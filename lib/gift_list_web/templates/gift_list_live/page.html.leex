@@ -6,6 +6,10 @@
     <h3>Você ainda não possui produtos na sua lista!</h3>
 <% end %>
 
+<form phx-change="update_products_list">
+    <input type="text" placeholder="Search" value="<%= @search %>" name="search"/>
+</form>
+
 <div class="row">
     <%= for product <- @products do %>
         <div class="card column product-column">
@@ -30,6 +34,10 @@
                 <% end %>
             </div>
         </div>
+    <% end %>
+
+    <%= for i <- 0..(4 - Enum.count(@products)), i > 0 do %>
+        <div class="column product-column"></div>
     <% end %>
 </div>
 

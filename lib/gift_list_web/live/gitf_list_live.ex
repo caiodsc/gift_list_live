@@ -23,7 +23,8 @@ defmodule GiftListWeb.GiftListLive do
              |> assign(%{
                 count: 0,
                 list: list,
-                products: products
+                products: products,
+                search: ""
               })
 
     {:ok, socket}
@@ -85,6 +86,15 @@ defmodule GiftListWeb.GiftListLive do
     list = list |> Repo.preload(:products, force: true)
 
     socket = assign(socket, :list, list)
+    {:noreply, socket}
+  end
+
+  def handle_event("update_products_list", %{"search" => search}, socket) do
+    query = from p in Product, where: ilike(p.name, ^"%#{search}%")
+    products = Repo.all(query)
+    socket = assign(socket, :search, search)
+    socket = assign(socket, :products, products)
+
     {:noreply, socket}
   end
 end
